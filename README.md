@@ -9,7 +9,7 @@ LLMCurator is a web based tool to interact with Large language model and curate 
 1. Install docker and docker-compose
 2. Download LLMCurator
 ```
-https://github.com/pushpankar/LLMCurator.io.git
+git clone https://github.com/pushpankar/LLMCurator.io.git
 ```
 
 3. Start LLMCurator
