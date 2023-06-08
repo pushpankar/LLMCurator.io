@@ -1,5 +1,7 @@
 LLMCurator is a web based tool to interact with Large language model and curate training data for it.
 
+![Demo](./demo.png)
+
 ## Key features
 1. Interact with LLM- LLMCurator acts a user friendly frontend to interact with large language models. Very useful during model development.
 2. Annotate data- LLMCurator turns into an annotation tool to curate training data for LLMs in just few clicks.
