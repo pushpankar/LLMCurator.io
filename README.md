@@ -17,7 +17,7 @@ git clone https://github.com/pushpankar/LLMCurator.io.git
 3. Start LLMCurator
 ``` 
 docker-compose up
-````
+```
 
 
 ## Configuration
