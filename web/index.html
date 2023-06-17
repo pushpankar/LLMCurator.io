@@ -10,13 +10,30 @@
 </head>
 
 <body class="bg-white h-screen">
+
+  <!-- Navigation bar starts here -->
+  <nav class="bg-white p-6 border-b border-gray-200 fixed w-full top-0">
+    <div class="container mx-auto flex items-center justify-between">
+      <a class="font-bold text-gray-800 text-xl lg:text-2xl" href="#">
+        LLMCurator
+      </a>
+      <div class="space-x-4">
+        <a href="#features" class="text-blue-500 hover:text-blue-700">Features</a>
+        <a href="#setup" class="text-blue-500 hover:text-blue-700">Setup</a>
+
+      </div>
+    </div>
+  </nav>
+  <!-- Navigation bar ends here -->
+
+
   <div class="pt-56 text-center">
     <h1 class="text-7xl font-bold text-gray-900 mb-5">Frontend and Annotation tool <br> for your LLM </h1>
     <p class="text-2xl text-gray-600">Teams use LLMCurator to annotate data, investigate LLM, and share models.</p>
     <button onclick="location.href='#setup'" class="mt-10 bg-blue-500 hover:bg-blue-700 text-white py-3 px-6 text-lg rounded"><b>Setup now </b>- It's free</button>
   </div>
 
-  <div class="flex flex-wrap justify-center py-32">
+  <div class="flex flex-wrap justify-center py-32" id="features">
     <div class="w-full md:w-1/2 md:pl-0 p-5">
       <img src="file:///Users/pushpankarkumar/Project/llmcurator/demo.png" alt="Product Image" class="mx-auto mt-10 md:mx-0 md:w-full h-96 object-cover object-left">
     </div>
@@ -44,8 +61,8 @@
 
 
 
-  <div class="p-5 mt-20" id="setup">
-    <h2 class="text-3xl font-bold text-gray-800 mb-5 text-center">Setup</h2>
+  <div class="p-5 mt-20 w-full lg:w-3/4" id="setup">
+    <h2 class="text-3xl font-bold text-gray-800 mb-5 text-left">Setup</h2>
     <pre class="rounded-lg bg-gray-100 p-6 pb-0 text-lg overflow-x-auto">
       <code>
  $ # Install docker from https://docs.docker.com/compose/install/
@@ -58,10 +75,11 @@
   </div>
   </div>
 
-  <div>
-  <footer class="bg-gray-50 p-6 text-center">
-    <p class="text-gray-600 mb-3">© 2023 All rights reserved.</p>
-    <p class="text-gray-600">Contact us at: <a href="mailto:pushpankark@gmail.com" class="underline text-blue-600">pushpankark@gmail.com</a></p>
+
+<div>
+  <footer class="bg-gray-50 px-10 py-6 flex justify-between items-center">
+    <p class="text-gray-500 text-sm">© 2023 All rights reserved.</p>
+    <p class="text-gray-800">Contact us at: <a href="mailto:pushpankark@gmail.com" class="underline text-blue-600">pushpankark@gmail.com</a></p>
   </footer>
 </div>
 
