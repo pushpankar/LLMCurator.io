@@ -4,3 +4,10 @@ demo.png filter=lfs diff=lfs merge=lfs -text
 demo/demo.png filter=lfs diff=lfs merge=lfs -text
 web/demo.png filter=lfs diff=lfs merge=lfs -text
 web/github-mark.png filter=lfs diff=lfs merge=lfs -text
+resources/ filter=lfs diff=lfs merge=lfs -text
+resources/public/js/compiled filter=lfs diff=lfs merge=lfs -text
+resources/public/js/compiled/cljs-runtime filter=lfs diff=lfs merge=lfs -text
+resources/public filter=lfs diff=lfs merge=lfs -text
+resources/public/css filter=lfs diff=lfs merge=lfs -text
+resources/public/icons filter=lfs diff=lfs merge=lfs -text
+resources/public/js filter=lfs diff=lfs merge=lfs -text
