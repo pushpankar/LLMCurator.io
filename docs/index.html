@@ -7,6 +7,15 @@
 
   <!-- Include Tailwind CSS here -->
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+  <style>
+    .background-texture {
+      background: url('background.svg');
+      background-repeat: no-repeat;
+      background-size: cover; /* Or use 'contain' to ensure the entire image is visible */
+    }
+  </style>
+
 </head>
 
 <body class="bg-white h-screen">
@@ -30,13 +39,13 @@
 
 
 
-  <div class="pt-56 text-center">
+  <div id="title-section" class="pt-56 text-center pb-32 background-texture">
     <h1 class="text-7xl font-bold text-gray-900 mb-5">Frontend and Annotation tool <br> for your LLM </h1>
     <p class="text-2xl text-gray-600">Teams use LLMCurator to annotate data, interact with LLM, and share results.</p>
     <button onclick="location.href='#setup'" class="mt-10 bg-blue-500 hover:bg-blue-700 text-white py-3 px-6 text-lg rounded"><b>Setup now </b>- It's free</button>
   </div>
 
-  <div class="flex flex-wrap justify-center py-32" id="features">
+  <div class="flex flex-wrap justify-center pb-4" id="features">
     <div class="w-full md:w-1/2 md:pl-0 p-5">
       <img src="file:///Users/pushpankarkumar/Project/llmcurator/demo.png" alt="Product Image" class="mx-auto mt-10 md:mx-0 md:w-full h-96 object-cover object-left">
     </div>
@@ -61,10 +70,11 @@
       </div>
     </div>
   </div>
+  </div>
 
 
-
-  <div class="p-5 mt-20 w-full lg:w-3/4" id="setup">
+ <div class="background-texture w-full flex justify-center py-24">
+  <div class="p-5 pt-20 lg:w-3/4" id="setup">
     <h2 class="text-3xl font-bold text-gray-800 mb-5 text-left">Setup</h2>
     <pre class="rounded-lg bg-gray-100 p-6 pb-0 text-lg overflow-x-auto">
       <code>
@@ -77,6 +87,7 @@
     </pre>
   </div>
   </div>
+
 
 
 <div>
