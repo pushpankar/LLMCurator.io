@@ -11,3 +11,4 @@ resources/public filter=lfs diff=lfs merge=lfs -text
 resources/public/css filter=lfs diff=lfs merge=lfs -text
 resources/public/icons filter=lfs diff=lfs merge=lfs -text
 resources/public/js filter=lfs diff=lfs merge=lfs -text
+docs/demo.png filter=lfs diff=lfs merge=lfs -text

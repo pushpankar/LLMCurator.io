@@ -25,22 +25,22 @@
 
 <body class="bg-white h-screen">
 
-<!-- Navigation bar starts here -->
-<nav class="bg-white p-6 border-b border-gray-200 fixed w-full top-0">
-  <div class="container mx-auto flex items-center justify-between">
-    <a class="font-bold text-gray-800 text-xl lg:text-2xl" href="#">
-      LLMCurator
-    </a>
-    <div class="flex items-center space-x-4">
-      <a href="#features" class="text-blue-500 hover:text-blue-700">Features</a>
-      <a href="#setup" class="text-blue-500 hover:text-blue-700">Setup</a>
-      <a href="https://github.com/pushpankar/LLMCurator.io/issues" class="flex items-center text-blue-500 hover:text-blue-700">
-        <img src="github-mark.png" class="w-8 h-8 mx-2">
+  <!-- Navigation bar starts here -->
+  <nav class="bg-white p-6 border-b border-gray-200 fixed w-full top-0">
+    <div class="container mx-auto flex items-center justify-between">
+      <a class="font-bold text-gray-800 text-xl lg:text-2xl" href="#">
+        LLMCurator
       </a>
+      <div class="flex items-center space-x-4">
+        <a href="#features" class="text-blue-500 hover:text-blue-700">Features</a>
+        <a href="#setup" class="text-blue-500 hover:text-blue-700">Setup</a>
+        <a href="https://github.com/pushpankar/LLMCurator.io/issues" class="flex items-center text-blue-500 hover:text-blue-700">
+          <img src="github-mark.png" class="w-8 h-8 mx-2">
+        </a>
+      </div>
     </div>
-  </div>
-</nav>
-<!-- Navigation bar ends here -->
+  </nav>
+  <!-- Navigation bar ends here -->
 
 
 
@@ -52,56 +52,56 @@
 
   <div class="flex flex-wrap justify-center pb-4" id="features">
     <div class="w-full md:w-1/2 md:pl-0 p-5">
-      <img src="file:///Users/pushpankarkumar/Project/llmcurator/demo.png" alt="Product Image" class="mx-auto mt-10 md:mx-0 md:w-full h-96 object-cover object-left">
+      <img src="demo.jpg" alt="Demo" class="mx-auto mt-10 md:mx-0 md:w-full h-96 object-cover object-left">
     </div>
     <div class="w-full md:w-1/2 p-5">
-    <h2 class="text-2xl font-bold text-gray-800 mb-5">Key Features</h2>
-    <div class="grid gap-6">
-      <div class="border border-gray-200 rounded p-4">
-        <h3 class="font-bold text-gray-800">1. Increase privacy:</h3>
-        <p class="text-gray-600">Track and remove sensitive data from inputs before sending to LLM.</p>
-      </div>
-      <div class="border border-gray-200 rounded p-4">
-        <h3 class="font-bold text-gray-800">2. Curate data:</h3>
-        <p class="text-gray-600">Choose and update response from LLM for future training.</p>
-      </div>
-      <div class="border border-gray-200 rounded p-4">
-        <h3 class="font-bold text-gray-800">3. Work with multiple models:</h3>
-        <p class="text-gray-600">Investigate and share multiple models in one UI.</p>
-      </div>
-      <div class="border border-gray-200 rounded p-4">
-        <h3 class="font-bold text-gray-800">4. Easy to setup:</h3>
-        <p class="text-gray-600">Setup in just 3 commands.</p>
+      <h2 class="text-2xl font-bold text-gray-800 mb-5">Key Features</h2>
+      <div class="grid gap-6">
+        <div class="border border-gray-200 rounded p-4">
+          <h3 class="font-bold text-gray-800">1. Increase privacy:</h3>
+          <p class="text-gray-600">Track and remove sensitive data from inputs before sending to LLM.</p>
+        </div>
+        <div class="border border-gray-200 rounded p-4">
+          <h3 class="font-bold text-gray-800">2. Curate data:</h3>
+          <p class="text-gray-600">Choose and update response from LLM for future training.</p>
+        </div>
+        <div class="border border-gray-200 rounded p-4">
+          <h3 class="font-bold text-gray-800">3. Work with multiple models:</h3>
+          <p class="text-gray-600">Investigate and share multiple models in one UI.</p>
+        </div>
+        <div class="border border-gray-200 rounded p-4">
+          <h3 class="font-bold text-gray-800">4. Easy to setup:</h3>
+          <p class="text-gray-600">Setup in just 3 commands.</p>
+        </div>
       </div>
     </div>
   </div>
-  </div>
 
 
- <div class="background-texture w-full flex justify-center pb-40 pt-20">
-  <div class="p-5 w-full lg:w-3/4 xl:w-2/3" id="setup">
-    <h2 class="text-3xl font-bold text-gray-800 mb-5 text-left">Setup</h2>
-    <pre class="rounded-lg bg-gray-100 p-6 pb-0 text-lg overflow-x-auto">
-      <code>
- $ # Install docker from https://docs.docker.com/compose/install/
+  <div class="background-texture w-full flex justify-center pb-40 pt-20">
+    <div class="p-5 w-full lg:w-3/4 xl:w-2/3" id="setup">
+      <h2 class="text-3xl font-bold text-gray-800 mb-5 text-left">Setup</h2>
+      <pre class="rounded-lg bg-gray-100 p-6 pb-0 text-lg overflow-x-auto">
+        <code>
+         $ # Install docker from https://docs.docker.com/compose/install/
 
- $ git clone https://github.com/pushpankar/LLMCurator.io
- $ cd LLMCurator.io
- $ docker-compose up
-      </code>
-    </pre>
-  </div>
-  </div>
+         $ git clone https://github.com/pushpankar/LLMCurator.io
+         $ cd LLMCurator.io
+         $ docker-compose up
+       </code>
+     </pre>
+   </div>
+ </div>
 
 
 
-<div>
-  <footer class="border-t px-2 md:px-10 py-6 flex justify-between items-center">
-    <p class="text-gray-500 text-sm">© 2023 All rights reserved.</p>
-    <p class="text-gray-800">Contact us at: <a href="mailto:pushpankark@gmail.com" class="underline text-blue-600">pushpankark@gmail.com</a></p>
+ <div>
+  <footer class="border-t px-2 md:px-10 py-6 flex flex-col md:flex-row justify-between items-center">
+    <p class="text-gray-500 text-sm mb-2 md:mb-0">© 2023 All rights reserved.</p>
+    <p class="text-gray-800 mb-2 md:mb-0">Contact us at: <a href="mailto:pushpankark@gmail.com" class="underline text-blue-600">pushpankark@gmail.com</a></p>
     <span class="text-gray-500 text-sm"> Free SVG Background by <a target="_blank" href="https://bgjar.com">BGJar</a> <span>
-  </footer>
-</div>
+    </footer>
+  </div>
 
 
 
