@@ -1,7 +1,11 @@
 from flask import Flask, jsonify, request
 import random
+from bardapi import Bard
 
 app = Flask(__name__)
+
+bard_key = 'XQiBHxTDxkoNXgCzIqnrzZGN9FUXdQazyFHzi-chBF88QNstH6ueApmWZmbhJKNbdrtyIg.'
+bard = Bard(token=bard_key)
 
 
 def generate_lorem_ipsum():
@@ -17,9 +21,10 @@ def generate_lorem_ipsum():
 def process_data():
     input_string = request.get_json().get('prompt', '')
     processed_data = input_string.upper()  # Perform some processing on the input string
-    response_data = {'responses': [generate_lorem_ipsum() for _ in range(3)]}
-    # response_data = {'response': generate_lorem_ipsum()}
+    # response_data = {'responses': [generate_lorem_ipsum() for _ in range(3)]}
+    response_data = {'response': bard.get_answer(input_string)['content']}
+    print(response_data)
     return jsonify(response_data)
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0", port=5056)
+    app.run(host="0.0.0.0", port=5055)
