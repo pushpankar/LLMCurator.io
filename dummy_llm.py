@@ -22,9 +22,10 @@ def process_data():
     input_string = request.get_json().get('prompt', '')
     processed_data = input_string.upper()  # Perform some processing on the input string
     # response_data = {'responses': [generate_lorem_ipsum() for _ in range(3)]}
-    response_data = {'response': bard.get_answer(input_string)['content']}
+    bard_resp = bard.get_answer(input_string)['content']
+    response_data = {'response': [bard_resp, bard_resp]}
     print(response_data)
     return jsonify(response_data)
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0", port=5055)
+    app.run(host="0.0.0.0", port=5056)
